@@ -2,3 +2,5 @@
 /build
 /globalVariables.js
 /webpack.config.js
+yarn-error.log
+.vscode/settings.json

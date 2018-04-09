@@ -1,8 +1,15 @@
 import React from "react"
-import { FizzBuzzCounter } from "./sample-module/component"
+import { Provider } from "react-redux"
+import { MoviesViewerContainer } from "./movies-viewer/components/movies-viewer"
+import { createStore } from "./store/create-store"
+import "./app.scss"
+
+const store = createStore();
 
 export const App = () => (
-  <div>
-    <FizzBuzzCounter />
-  </div>
+  <Provider store={store}>
+    <div className="app-container">
+      <MoviesViewerContainer />
+    </div>
+  </Provider>
 )

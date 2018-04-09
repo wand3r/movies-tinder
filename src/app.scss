@@ -1,0 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body, #app {
+  height: 100%;
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  height: 100%;
+  padding: 0.5em;
+  max-height: 40em;
+  max-width: 60em;
+}

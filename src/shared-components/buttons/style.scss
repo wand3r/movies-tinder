@@ -1,0 +1,41 @@
+$color-green: #53E845;
+$color-red: #d62e2e;
+
+
+.btn {
+  $padding: 0.4em;  
+  display: flex;
+  flex-grow: 1;    
+  padding: $padding $padding * 3;
+  user-select: none;
+  cursor: pointer;
+  &--color-green {
+    background: $color-green
+  }
+  &--color-red {
+    background: $color-red
+  }
+  &__label {
+    text-align: center;
+    order: 1;
+    flex: 1;
+  }
+  &--direction-left {
+    .btn__icon {
+      padding-right: $padding;
+      order: 0;
+    }
+    .btn__label {
+      text-align: left;
+    }
+  }
+  &--direction-right {
+    .btn__icon {
+      padding-left: $padding;
+      order: 2;      
+    }
+    .btn__label {
+      text-align: right;
+    }
+  }
+}

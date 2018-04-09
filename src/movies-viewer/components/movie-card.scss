@@ -1,0 +1,32 @@
+.movie-card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  
+  &__header {
+    padding: 0.25em;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+  &__image {
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  &__summary {
+    text-align: center;
+  }
+}
+
+.movie-card-placeholder {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  text-align: center;
+}

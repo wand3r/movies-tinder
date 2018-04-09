@@ -64,7 +64,7 @@ export default (env: { environment: any; analyze: any }) => {
       "process.env.NODE_ENV": JSON.stringify(environment),
     }),
     new webpack.optimize.ModuleConcatenationPlugin(),
-    extractSass,
+    extractSass as any,
     ...(environment === "development"
       ? [
           new HtmlWebpackPlugion({
