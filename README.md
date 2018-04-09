@@ -7,4 +7,5 @@
 * Handle failure cases on accepting and rejecting movies
 * Display special screen when fatching movies ended with failure with refresh feature
 * Change Loader component
-* Maybe add tests for reducer, though it isn't too complicated yet. 
+* Maybe add tests for reducer, though it isn't too complicated yet.
+* Better styling for desktop
