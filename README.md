@@ -1,8 +1,3 @@
-Boilerplate project with:
 
-* react
-* typescript
-* jest
-* storybook
-* webpack with HMR
-* scss
+1. `yarn install`
+2. `yarn run dev-server` or `yarn run storybook`
