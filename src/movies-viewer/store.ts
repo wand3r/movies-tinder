@@ -13,8 +13,10 @@ export const changeMovie = buildAction("CHANGE_MOVIE").payload<{ id: MovieId }>(
 export const fetchMoviesThunk = (): ThunkAction => (dispatch, getState) => {
   dispatch(fetchMovies.request());
   getRecommendations()
-    .then(movies => dispatch(fetchMovies.success({ movies })))
-    .catch(err => dispatch(fetchMovies.failure(err)))
+    .then(
+      movies => dispatch(fetchMovies.success({ movies })),
+      err => dispatch(fetchMovies.failure(err)),
+    )
   }
 
 export const acceptMovieThunk = (id: MovieId): ThunkAction => (dispatch, getState) => {

@@ -9,7 +9,7 @@ import { disableBackSwipe } from "../../shared-components/react-swipeable-views-
 import { MovieCard, MovieCardPlaceHolder } from "./movie-card";
 import { Movie, MovieId } from "../model";
 import { RootState } from "../../store/root-state"
-import { fetchMoviesThunk, acceptMovieThunk, rejectMovieThunk, fetchMovies } from "../store"
+import { fetchMoviesThunk, acceptMovieThunk, rejectMovieThunk } from "../store"
 import "./movies-viewer.scss";
 import { Loader } from "../../shared-components/loader";
 
